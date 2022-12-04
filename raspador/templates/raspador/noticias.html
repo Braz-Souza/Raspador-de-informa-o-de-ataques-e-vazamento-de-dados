@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raspador</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+      body {
+        margin: 0;
+        background-color: #181d27;
+      }
+      header {
+        background-color: #0c4b33;
+        padding: 12px 42px;
+        text-align: center;
+        color: white;
+        font-family: 'Comfortaa', cursive;
+      }
+      .header-title {
+        font-size: 24px;
+      }
+      .under-header {
+        background-color: #187f58;
+        padding: 24px;
+        text-align: center;
+        font-family: 'Ubuntu', cursive;
+      }
+      #description {
+        color: white;
+      }
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+      .noticia {
+        margin-top: 50px;
+        width: 40vh;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-shrink: 0;
+        font-family: 'Ubuntu', cursive;
+        box-shadow: 5px 5px #ffffff44;
+      }
+      img {
+        width: 80%;
+        height: 40%;
+        margin: 20px;
+        margin-bottom: 10px;
+        flex-shrink: 0;
+      }
+      .informacoes-noticia {
+        padding: 24px;
+        padding-top: 0px;
+      }
+      .noticias {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 24px 30px;
+        margin-top: 0;
+        gap: 40px;
+      }
+      .header-title-mobile {
+        display: none;
+      }
+      @media only screen and (max-width: 840px) {
+        .under-header {
+          display: none;
+        }
+        .header-title {
+          display: none;
+        }
+        .header-title-mobile {
+          display: block;
+        }
+        .noticias {
+          flex-direction: column;
+          gap: 25px;
+          margin: 0;
+        }
+        main {
+          margin: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="header-title">
+        Raspador de noticias sobre ataque e vazamento de dados
+      </h1>
+      <h1 class="header-title-mobile">Raspador de noticias</h1>
+    </header>
+    <div class="under-header">
+      <span id="description"> Insira descrição do projeto aqui </span>
+    </div>
+    <main class="noticias">
+      <a class="noticia" href="https://docs.djangoproject.com/en/4.1/">
+        <img
+          src="https://static.djangoproject.com/img/logos/django-logo-negative.png"
+          alt=""
+        />
+        <div class="informacoes-noticia">
+          <h3>Titulo da noticia raspada</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+            recusandae quam vero commodi totam, quisquam, dolorem labore amet
+            sapiente aut a consectetur nostrum repellat quibusdam corrupti?
+            Voluptas et rem amet!
+          </p>
+        </div>
+      </a>
+      <a class="noticia" href="https://docs.djangoproject.com/en/4.1/">
+        <img
+          src="https://static.djangoproject.com/img/logos/django-logo-negative.png"
+          alt=""
+        />
+        <div class="informacoes-noticia">
+          <h3>Titulo da noticia raspada</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+            recusandae quam vero commodi totam, quisquam, dolorem labore amet
+            sapiente aut a consectetur nostrum repellat quibusdam corrupti?
+            Voluptas et rem amet!
+          </p>
+        </div>
+      </a>
+      <a class="noticia" href="https://docs.djangoproject.com/en/4.1/">
+        <img
+          src="https://static.djangoproject.com/img/logos/django-logo-negative.png"
+          alt=""
+        />
+        <div class="informacoes-noticia">
+          <h3>Titulo da noticia raspada</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+            recusandae quam vero commodi totam, quisquam, dolorem labore amet
+            sapiente aut a consectetur nostrum repellat quibusdam corrupti?
+            Voluptas et rem amet!
+          </p>
+        </div>
+      </a>
+      <a class="noticia" href="https://docs.djangoproject.com/en/4.1/">
+        <img
+          src="https://static.djangoproject.com/img/logos/django-logo-negative.png"
+          alt=""
+        />
+        <div class="informacoes-noticia">
+          <h3>Titulo da noticia raspada</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+            recusandae quam vero commodi totam, quisquam, dolorem labore amet
+            sapiente aut a consectetur nostrum repellat quibusdam corrupti?
+            Voluptas et rem amet!
+          </p>
+        </div>
+      </a>
+      <a class="noticia" href="https://docs.djangoproject.com/en/4.1/">
+        <img
+          src="https://static.djangoproject.com/img/logos/django-logo-negative.png"
+          alt=""
+        />
+        <div class="informacoes-noticia">
+          <h3>Titulo da noticia raspada</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+            recusandae quam vero commodi totam, quisquam, dolorem labore amet
+            sapiente aut a consectetur nostrum repellat quibusdam corrupti?
+            Voluptas et rem amet!
+          </p>
+        </div>
+      </a>
+      <a class="noticia" href="https://docs.djangoproject.com/en/4.1/">
+        <img
+          src="https://static.djangoproject.com/img/logos/django-logo-negative.png"
+          alt=""
+        />
+        <div class="informacoes-noticia">
+          <h3>Titulo da noticia raspada</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+            recusandae quam vero commodi totam, quisquam, dolorem labore amet
+            sapiente aut a consectetur nostrum repellat quibusdam corrupti?
+            Voluptas et rem amet!
+          </p>
+        </div>
+      </a>
+      <a class="noticia" href="https://docs.djangoproject.com/en/4.1/">
+        <img
+          src="https://static.djangoproject.com/img/logos/django-logo-negative.png"
+          alt=""
+        />
+        <div class="informacoes-noticia">
+          <h3>Titulo da noticia raspada</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+            recusandae quam vero commodi totam, quisquam, dolorem labore amet
+            sapiente aut a consectetur nostrum repellat quibusdam corrupti?
+            Voluptas et rem amet!
+          </p>
+        </div>
+      </a>
+      <a class="noticia" href="https://docs.djangoproject.com/en/4.1/">
+        <img
+          src="https://static.djangoproject.com/img/logos/django-logo-negative.png"
+          alt=""
+        />
+        <div class="informacoes-noticia">
+          <h3>Titulo da noticia raspada</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+            recusandae quam vero commodi totam, quisquam, dolorem labore amet
+            sapiente aut a consectetur nostrum repellat quibusdam corrupti?
+            Voluptas et rem amet!
+          </p>
+        </div>
+      </a>
+      <a class="noticia" href="https://docs.djangoproject.com/en/4.1/">
+        <img
+          src="https://static.djangoproject.com/img/logos/django-logo-negative.png"
+          alt=""
+        />
+        <div class="informacoes-noticia">
+          <h3>Titulo da noticia raspada</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+            recusandae quam vero commodi totam, quisquam, dolorem labore amet
+            sapiente aut a consectetur nostrum repellat quibusdam corrupti?
+            Voluptas et rem amet!
+          </p>
+        </div>
+      </a>
+      <a class="noticia" href="https://docs.djangoproject.com/en/4.1/">
+        <img
+          src="https://static.djangoproject.com/img/logos/django-logo-negative.png"
+          alt=""
+        />
+        <div class="informacoes-noticia">
+          <h3>Titulo da noticia raspada</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+            recusandae quam vero commodi totam, quisquam, dolorem labore amet
+            sapiente aut a consectetur nostrum repellat quibusdam corrupti?
+            Voluptas et rem amet!
+          </p>
+        </div>
+      </a>
+      <a class="noticia" href="https://docs.djangoproject.com/en/4.1/">
+        <img
+          src="https://static.djangoproject.com/img/logos/django-logo-negative.png"
+          alt=""
+        />
+        <div class="informacoes-noticia">
+          <h3>Titulo da noticia raspada</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+            recusandae quam vero commodi totam, quisquam, dolorem labore amet
+            sapiente aut a consectetur nostrum repellat quibusdam corrupti?
+            Voluptas et rem amet!
+          </p>
+        </div>
+      </a>
+      <a class="noticia" href="https://docs.djangoproject.com/en/4.1/">
+        <img
+          src="https://static.djangoproject.com/img/logos/django-logo-negative.png"
+          alt=""
+        />
+        <div class="informacoes-noticia">
+          <h3>Titulo da noticia raspada</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+            recusandae quam vero commodi totam, quisquam, dolorem labore amet
+            sapiente aut a consectetur nostrum repellat quibusdam corrupti?
+            Voluptas et rem amet!
+          </p>
+        </div>
+      </a>
+      <a class="noticia" href="https://docs.djangoproject.com/en/4.1/">
+        <img
+          src="https://static.djangoproject.com/img/logos/django-logo-negative.png"
+          alt=""
+        />
+        <div class="informacoes-noticia">
+          <h3>Titulo da noticia raspada</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+            recusandae quam vero commodi totam, quisquam, dolorem labore amet
+            sapiente aut a consectetur nostrum repellat quibusdam corrupti?
+            Voluptas et rem amet!
+          </p>
+        </div>
+      </a>
+      <a class="noticia" href="https://docs.djangoproject.com/en/4.1/">
+        <img
+          src="https://static.djangoproject.com/img/logos/django-logo-negative.png"
+          alt=""
+        />
+        <div class="informacoes-noticia">
+          <h3>Titulo da noticia raspada</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+            recusandae quam vero commodi totam, quisquam, dolorem labore amet
+            sapiente aut a consectetur nostrum repellat quibusdam corrupti?
+            Voluptas et rem amet!
+          </p>
+        </div>
+      </a>
+      <a class="noticia" href="https://docs.djangoproject.com/en/4.1/">
+        <img
+          src="https://static.djangoproject.com/img/logos/django-logo-negative.png"
+          alt=""
+        />
+        <div class="informacoes-noticia">
+          <h3>Titulo da noticia raspada</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+            recusandae quam vero commodi totam, quisquam, dolorem labore amet
+            sapiente aut a consectetur nostrum repellat quibusdam corrupti?
+            Voluptas et rem amet!
+          </p>
+        </div>
+      </a>
+      <a class="noticia" href="https://docs.djangoproject.com/en/4.1/">
+        <img
+          src="https://static.djangoproject.com/img/logos/django-logo-negative.png"
+          alt=""
+        />
+        <div class="informacoes-noticia">
+          <h3>Titulo da noticia raspada</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+            recusandae quam vero commodi totam, quisquam, dolorem labore amet
+            sapiente aut a consectetur nostrum repellat quibusdam corrupti?
+            Voluptas et rem amet!
+          </p>
+        </div>
+      </a>
+      <a class="noticia" href="https://docs.djangoproject.com/en/4.1/">
+        <img
+          src="https://static.djangoproject.com/img/logos/django-logo-negative.png"
+          alt=""
+        />
+        <div class="informacoes-noticia">
+          <h3>Titulo da noticia raspada</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+            recusandae quam vero commodi totam, quisquam, dolorem labore amet
+            sapiente aut a consectetur nostrum repellat quibusdam corrupti?
+            Voluptas et rem amet!
+          </p>
+        </div>
+      </a>
+      <a class="noticia" href="https://docs.djangoproject.com/en/4.1/">
+        <img
+          src="https://static.djangoproject.com/img/logos/django-logo-negative.png"
+          alt=""
+        />
+        <div class="informacoes-noticia">
+          <h3>Titulo da noticia raspada</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+            recusandae quam vero commodi totam, quisquam, dolorem labore amet
+            sapiente aut a consectetur nostrum repellat quibusdam corrupti?
+            Voluptas et rem amet!
+          </p>
+        </div>
+      </a>
+      <a class="noticia" href="https://docs.djangoproject.com/en/4.1/">
+        <img
+          src="https://static.djangoproject.com/img/logos/django-logo-negative.png"
+          alt=""
+        />
+        <div class="informacoes-noticia">
+          <h3>Titulo da noticia raspada</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+            recusandae quam vero commodi totam, quisquam, dolorem labore amet
+            sapiente aut a consectetur nostrum repellat quibusdam corrupti?
+            Voluptas et rem amet!
+          </p>
+        </div>
+      </a>
+    </main>
+  </body>
+</html>
