@@ -102,8 +102,10 @@
     </div>
     <main class="noticias">
       {% for noticia in noticias %}
-      <a class="noticia" href="{{ noticia.link }}">
+      <a class="noticia" href="{{ noticia.link }}" target="_blank">
+        {% if noticia.img != "" %}
         <img src="{{ noticia.img }}" alt="" />
+        {% endif %}
         <div class="informacoes-noticia">
           <h3>{{ noticia.title }}</h3>
           <p>{{ noticia.desc }}</p>
