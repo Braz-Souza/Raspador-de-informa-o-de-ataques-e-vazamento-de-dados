@@ -69,6 +69,34 @@
       .header-title-mobile {
         display: none;
       }
+      .button {
+        position: absolute;
+        left: 900px;
+        font-size:18px;
+        font-family:'Comfortaa', cursive;
+        width:100px;
+        height:50px;
+        border-width:1px;
+        color:#fff;
+        border-color:#18ab29;
+        font-weight:bold;
+        border-top-left-radius:20px;
+        border-top-right-radius:20px;
+        border-bottom-left-radius:20px;
+        border-bottom-right-radius:20px;
+        text-shadow: 1px 1px 0px #2f6627;
+        background:#44c767;
+        margin-top: 40px !important;
+        padding-bottom: 2px;
+        padding-top: 2px;
+        vertical-align: middle;
+        text-align: center;
+      }
+
+      .button:hover {
+        background: #5cbf2a;
+      }
+
       @media only screen and (max-width: 840px) {
         .under-header {
           display: none;
@@ -87,6 +115,33 @@
         main {
           margin: 0;
         }
+        .button {
+          position: absolute;
+          left: 900px;
+          font-size:18px;
+          font-family:'Comfortaa', cursive;
+          width:100px;
+          height:50px;
+          border-width:1px;
+          color:#fff;
+          border-color:#18ab29;
+          font-weight:bold;
+          border-top-left-radius:20px;
+          border-top-right-radius:20px;
+          border-bottom-left-radius:20px;
+          border-bottom-right-radius:20px;
+          text-shadow: 1px 1px 0px #2f6627;
+          background:#44c767;
+          margin-top: 40px !important;
+          padding-bottom: 2px;
+          padding-top: 2px;
+          vertical-align: middle;
+          text-align: center;
+        }
+  
+        .button:hover {
+          background: #5cbf2a;
+        }
       }
     </style>
   </head>
@@ -100,6 +155,12 @@
     <div class="under-header">
       <span id="description"> Insira descrição do projeto aqui </span>
     </div>
+    
+    <form action="#" method="get"> 
+      <input type="submit" class="button" value="Raspar"
+      name="btnraspador" />
+      </form>
+
     <main class="noticias">
       {% for noticia in noticias %}
       <a class="noticia" href="{{ noticia.link }}" target="_blank">
