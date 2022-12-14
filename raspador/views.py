@@ -8,7 +8,7 @@ import time
 
 
 def index(request):
-    hora = time.localtime()
+    agora = time.localtime()
     if agora.tm_hour == 14 and agora.tm_min == 17:
         pesquisar_por_palavra_chaves_e_depois_salvar_noticias(Noticia)
     noticias = Noticia.objects.order_by('id')
