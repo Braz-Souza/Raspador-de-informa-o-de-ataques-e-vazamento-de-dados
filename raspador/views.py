@@ -3,11 +3,14 @@ from django.shortcuts import render
 from django.template import loader
 from .models import Noticia
 from .raspador import pesquisar_por_palavra_chaves_e_depois_salvar_noticias;
+import time
 
 
 
 def index(request):
-    
+    hora = time.localtime()
+    if agora.tm_hour == 14 and agora.tm_min == 17:
+        pesquisar_por_palavra_chaves_e_depois_salvar_noticias(Noticia)
     noticias = Noticia.objects.order_by('id')
     template = loader.get_template('raspador/noticias.html')
     context = {
