@@ -18,6 +18,10 @@ João de Deus
 
 [sqlite3](https://docs.python.org/3/library/sqlite3.html)
 
+Requests
+
+BeautifulSoup4
+
 ## Funcionalidades:
 
 Definir a lista de fontes e raspar notícias diariamente
