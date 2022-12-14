@@ -12,6 +12,8 @@ def index(request):
     context = {
         'noticias': noticias,
     }
+    if (request.GET.get('deletedb')):
+        Noticia.objects.all().delete()
     if (request.GET.get('btnraspador')):
         pesquisar_por_palavra_chaves_e_depois_salvar_noticias(Noticia);
     return HttpResponse(template.render(context, request))

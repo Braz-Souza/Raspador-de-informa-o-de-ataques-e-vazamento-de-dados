@@ -1,91 +1,155 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Raspador</title>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-      body {
-        margin: 0;
-        background-color: #181d27;
-      }
-      header {
-        background-color: #0c4b33;
-        padding: 12px 42px;
-        text-align: center;
-        color: white;
-        font-family: 'Comfortaa', cursive;
-      }
-      .header-title {
-        font-size: 24px;
-      }
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raspador</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+    body {
+      margin: 0;
+      background-color: #181d27;
+    }
+
+    header {
+      background-color: #0c4b33;
+      padding: 12px 42px;
+      text-align: center;
+      color: white;
+      font-family: 'Comfortaa', cursive;
+    }
+
+    .header-title {
+      font-size: 24px;
+    }
+
+    .under-header {
+      background-color: #187f58;
+      padding: 24px;
+      text-align: center;
+      font-family: 'Ubuntu', cursive;
+    }
+
+    #description {
+      color: white;
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    .noticia {
+      margin-top: 50px;
+      width: 40vh;
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column;
+      flex-shrink: 0;
+      font-family: 'Ubuntu', cursive;
+      box-shadow: 5px 5px #ffffff44;
+    }
+
+    img {
+      width: 80%;
+      height: 40%;
+      margin: 20px;
+      margin-bottom: 10px;
+      flex-shrink: 0;
+    }
+
+    .informacoes-noticia {
+      padding: 24px;
+      padding-top: 0px;
+    }
+
+    .noticias {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 24px 30px;
+      margin-top: 0;
+      gap: 40px;
+    }
+
+    .header-title-mobile {
+      display: none;
+    }
+
+    .button {
+      position: absolute;
+      left: 900px;
+      font-size: 18px;
+      font-family: 'Comfortaa', cursive;
+      width: 100px;
+      height: 50px;
+      border-width: 1px;
+      color: #fff;
+      border-color: #18ab29;
+      font-weight: bold;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      text-shadow: 1px 1px 0px #2f6627;
+      background: #44c767;
+      margin-top: 40px !important;
+      padding-bottom: 2px;
+      padding-top: 2px;
+      vertical-align: middle;
+      text-align: center;
+    }
+
+    .button:hover {
+      background: #5cbf2a;
+    }
+
+    @media only screen and (max-width: 840px) {
       .under-header {
-        background-color: #187f58;
-        padding: 24px;
-        text-align: center;
-        font-family: 'Ubuntu', cursive;
-      }
-      #description {
-        color: white;
-      }
-      a {
-        color: #000;
-        text-decoration: none;
-      }
-      .noticia {
-        margin-top: 50px;
-        width: 40vh;
-        background-color: #ffffff;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        flex-direction: column;
-        flex-shrink: 0;
-        font-family: 'Ubuntu', cursive;
-        box-shadow: 5px 5px #ffffff44;
-      }
-      img {
-        width: 80%;
-        height: 40%;
-        margin: 20px;
-        margin-bottom: 10px;
-        flex-shrink: 0;
-      }
-      .informacoes-noticia {
-        padding: 24px;
-        padding-top: 0px;
-      }
-      .noticias {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-wrap: wrap;
-        margin: 24px 30px;
-        margin-top: 0;
-        gap: 40px;
-      }
-      .header-title-mobile {
         display: none;
       }
+
+      .header-title {
+        display: none;
+      }
+
+      .header-title-mobile {
+        display: block;
+      }
+
+      .noticias {
+        flex-direction: column;
+        gap: 25px;
+        margin: 0;
+      }
+
+      main {
+        margin: 0;
+      }
+
       .button {
         position: absolute;
         left: 900px;
-        font-size:18px;
-        font-family:'Comfortaa', cursive;
-        width:100px;
-        height:50px;
-        border-width:1px;
-        color:#fff;
-        border-color:#18ab29;
-        font-weight:bold;
-        border-top-left-radius:20px;
-        border-top-right-radius:20px;
-        border-bottom-left-radius:20px;
-        border-bottom-right-radius:20px;
+        font-size: 18px;
+        font-family: 'Comfortaa', cursive;
+        width: 100px;
+        height: 50px;
+        border-width: 1px;
+        color: #fff;
+        border-color: #18ab29;
+        font-weight: bold;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
         text-shadow: 1px 1px 0px #2f6627;
-        background:#44c767;
+        background: #44c767;
         margin-top: 40px !important;
         padding-bottom: 2px;
         padding-top: 2px;
@@ -96,83 +160,41 @@
       .button:hover {
         background: #5cbf2a;
       }
+    }
+  </style>
+</head>
 
-      @media only screen and (max-width: 840px) {
-        .under-header {
-          display: none;
-        }
-        .header-title {
-          display: none;
-        }
-        .header-title-mobile {
-          display: block;
-        }
-        .noticias {
-          flex-direction: column;
-          gap: 25px;
-          margin: 0;
-        }
-        main {
-          margin: 0;
-        }
-        .button {
-          position: absolute;
-          left: 900px;
-          font-size:18px;
-          font-family:'Comfortaa', cursive;
-          width:100px;
-          height:50px;
-          border-width:1px;
-          color:#fff;
-          border-color:#18ab29;
-          font-weight:bold;
-          border-top-left-radius:20px;
-          border-top-right-radius:20px;
-          border-bottom-left-radius:20px;
-          border-bottom-right-radius:20px;
-          text-shadow: 1px 1px 0px #2f6627;
-          background:#44c767;
-          margin-top: 40px !important;
-          padding-bottom: 2px;
-          padding-top: 2px;
-          vertical-align: middle;
-          text-align: center;
-        }
-  
-        .button:hover {
-          background: #5cbf2a;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1 class="header-title">
-        Raspador de noticias sobre ataque e vazamento de dados
-      </h1>
-      <h1 class="header-title-mobile">Raspador de noticias</h1>
-    </header>
-    <div class="under-header">
-      <span id="description"> Insira descrição do projeto aqui </span>
-    </div>
-    
-    <form action="#" method="get"> 
-      <input type="submit" class="button" value="Raspar"
-      name="btnraspador" />
-      </form>
+<body>
+  <header>
+    <h1 class="header-title">
+      Raspador de noticias sobre ataque e vazamento de dados
+    </h1>
+    <h1 class="header-title-mobile">Raspador de noticias</h1>
+  </header>
+  <div class="under-header">
+    <span id="description"> Insira descrição do projeto aqui </span>
+  </div>
 
-    <main class="noticias">
-      {% for noticia in noticias %}
-      <a class="noticia" href="{{ noticia.link }}" target="_blank">
-        {% if noticia.img != "" %}
-        <img src="{{ noticia.img }}" alt="" />
-        {% endif %}
-        <div class="informacoes-noticia">
-          <h3>{{ noticia.title }}</h3>
-          <p>{{ noticia.desc }}</p>
-        </div>
-      </a>
-      {% endfor %}
-    </main>
-  </body>
+  <form action="#" method="get">
+    <input type="submit" class="button" value="Raspar" name="btnraspador" />
+  </form>
+  <form action="#" method="get">
+    <input type="submit" class="button" value="Deletar" name="deletebd" />
+  </form>
+
+  <main class="noticias">
+    {% for noticia in noticias %}
+    <a class="noticia" href="{{ noticia.link }}" target="_blank">
+      {% if noticia.img != "" %}
+      <img src="{{ noticia.img }}" alt="" />
+      {% endif %}
+      <div class="informacoes-noticia">
+        <h3>{{ noticia.title }}</h3>
+        <p>{{ noticia.desc }}</p>
+      </div>
+    </a>
+    {% endfor %}
+  </main>
+</body>
+
 </html>
