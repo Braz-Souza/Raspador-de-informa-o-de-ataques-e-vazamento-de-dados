@@ -12,6 +12,11 @@ def index(request):
     if agora.tm_hour == 14 and agora.tm_min == 17:
         pesquisar_por_palavra_chaves_e_depois_salvar_noticias(Noticia)
     noticias = Noticia.objects.order_by('id')
+
+    if (request.GET.get('pesquisa')):
+        pesquisa = request.GET.get('pesquisa')
+        noticias = Noticia.objects.filter(title_icontains=pesquisa)
+
     template = loader.get_template('raspador/noticias.html')
     context = {
         'noticias': noticias,
