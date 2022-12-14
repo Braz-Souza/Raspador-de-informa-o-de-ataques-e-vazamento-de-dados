@@ -12,9 +12,14 @@
     body {
       margin: 0;
       background-color: #181d27;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
     }
 
     header {
+      width: 100%;
       background-color: #0c4b33;
       padding: 12px 42px;
       text-align: center;
@@ -27,6 +32,7 @@
     }
 
     .under-header {
+      width: 100%;
       background-color: #187f58;
       padding: 24px;
       text-align: center;
@@ -83,20 +89,15 @@
     }
 
     .button {
-      position: absolute;
-      left: 900px;
       font-size: 18px;
       font-family: 'Comfortaa', cursive;
       width: 100px;
       height: 50px;
-      border-width: 1px;
       color: #fff;
+      border-width: 1px;
       border-color: #18ab29;
+      border-radius: 20px;
       font-weight: bold;
-      border-top-left-radius: 20px;
-      border-top-right-radius: 20px;
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 20px;
       text-shadow: 1px 1px 0px #2f6627;
       background: #44c767;
       margin-top: 40px !important;
@@ -131,34 +132,6 @@
 
       main {
         margin: 0;
-      }
-
-      .button {
-        position: absolute;
-        left: 900px;
-        font-size: 18px;
-        font-family: 'Comfortaa', cursive;
-        width: 100px;
-        height: 50px;
-        border-width: 1px;
-        color: #fff;
-        border-color: #18ab29;
-        font-weight: bold;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        text-shadow: 1px 1px 0px #2f6627;
-        background: #44c767;
-        margin-top: 40px !important;
-        padding-bottom: 2px;
-        padding-top: 2px;
-        vertical-align: middle;
-        text-align: center;
-      }
-
-      .button:hover {
-        background: #5cbf2a;
       }
     }
   </style>

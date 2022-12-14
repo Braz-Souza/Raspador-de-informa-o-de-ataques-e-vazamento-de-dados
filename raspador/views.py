@@ -5,6 +5,7 @@ from .models import Noticia
 from .raspador import pesquisar_por_palavra_chaves_e_depois_salvar_noticias;
 
 
+
 def index(request):
     
     noticias = Noticia.objects.order_by('id')
